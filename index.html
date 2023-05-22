@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_6</title>
+</head>
+<body>
+    <h1>Lesson 6</h1>
+    <form action="/" name="register-form">
+        <fieldset>
+            <legend>Register Form</legend>
+
+            <label for="name">First name</label>
+            <br>
+            <input type="text" id="name" name="first-name" placeholder="First name" minlength="2" maxlength="10" required>
+            <br>
+            <br>
+            <label for="surname">Last name</label>
+            <br>
+            <input type="text" id="surname" name="last-name" placeholder="Last name" required>
+            <br>
+            <br>
+            <label for="family-name">Family name</label>
+            <input type="text" name="family-name" id="family-name" readonly>
+            <p>Choose your gender</p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" value="male" name="gender" required>
+            <label for="female">Female</label>
+            <input type="radio" id="female" value="female" name="gender" required>
+            <label for="other">Other</label>
+            <input type="radio" id="other" value="other" name="gender" required>
+            <p>Choose your car</p>
+            <label for="bmw">BMW</label>
+            <input type="checkbox" id="bmw" value="bmw" name="bmw">
+            <label for="audi">Audi</label>
+            <input type="checkbox" id="audi" value="audi" name="audi">
+            <label for="opel">Opel</label>
+            <input type="checkbox" id="opel" value="opel" name="opel">
+            <label for="vw">VW</label>
+            <input type="checkbox" id="vw" value="vw" name="vw">
+            <br>
+            <br>
+            <label for="age">Age</label>
+            <br>
+            <input type="number" name="age" id="age" min="18" max="100">
+            <br>
+            <br>
+            <select name="car-year">
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="Choose all" name="choose-all">
+            <br>
+            <br>
+            <label for="password">Enter Password</label>
+            <br>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <label for="confim password">Confim Password</label>
+            <br>
+            <input type="password" id="confim-password" name="confim-password" required>
+            <br>
+            <br>
+            <input type="submit" value="Sign Up" name="sing-up">
+            <input type="hidden" value="secret value" name="hidden-field">
+            <br>
+            <br>
+            <label for="exp">Write your experience</label>
+            <br>
+            <textarea id="exp" cols="50" rows="10"></textarea>
+            <br>
+            <br>
+            <label for="avatar">Upload your photo</label>
+            <input type="file" id="avatar" name="avatar">
+        </fieldset>
+    </form>
+</body>
+</html>
